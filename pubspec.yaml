@@ -1,0 +1,50 @@
+name: algo_app
+description: "A new Flutter project."
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.5.4 <4.0.0' # Updated SDK constraint
+
+# Dependencies specify other packages that your package needs in order to work.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_native_splash: ^2.3.1 # Moved to dev_dependencies
+  flutter_lints: ^4.0.0 # Moved to dev_dependencies
+
+# Configuration for the flutter_native_splash package
+flutter_native_splash:
+  color: "#102f44" # Background color of the splash screen
+  image: assets/error_by_bot.png # Path to your splash screen image (use underscores instead of spaces)
+  android: true # Enable for Android
+  ios: true # Enable for iOS
+  android_gravity: center # Center the image on Android
+  ios_content_mode: center # Center the image on iOS
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/error_by_bot.png # Add your splash screen image here (use underscores instead of spaces)
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
